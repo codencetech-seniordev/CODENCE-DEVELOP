@@ -539,10 +539,10 @@
             background: #e0e0e0;
         }
 
-        .about-content {
-            max-width: 700px;
-            margin: 0 auto;
-            text-align: center;
+        .about-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
         }
 
         .about-text h3 {
@@ -556,6 +556,7 @@
             color: #b0b0b0;
             line-height: 1.8;
             font-size: 15px;
+            margin-bottom: 25px;
         }
 
         .social-link {
@@ -608,6 +609,23 @@
 
         footer a:hover {
             text-decoration: underline;
+        }
+
+        /* Tablet and Mobile Styles */
+        @media (max-width: 900px) {
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+            }
+
+            .about-image-container {
+                justify-content: center;
+            }
+
+            .about-image {
+                max-width: 250px;
+            }
         }
 
         /* Tablet Styles */
@@ -914,7 +932,7 @@
                         <h3>🌍 Be Part of Something Big</h3>
                         <p>We're creating a platform where talented people can build products, grow together, and shape the future of digital business.</p>
                         <p style="margin-bottom: 20px;">📩 Want to join? Send your profile or portfolio to:</p>
-                        <a href="mailto:contactcodence@gmail.com" class="work-email">✉️ contactcodence@gmail.com</a>
+                        <a href="mailto:contactcodeins@gmail.com" class="work-email">✉️ contactcodeins@gmail.com</a>
                     </div>
                 </div>
             </section>
@@ -925,6 +943,9 @@
         <div class="container">
             <h2>About Me</h2>
             <div class="about-content">
+                <div class="about-image-container">
+                    <img src="https://i.ibb.co/2cMKZY9/image.png" alt="Varun - Founder of CODENCE DEVELOP" class="about-image">
+                </div>
                 <div class="about-text">
                     <h3>Hello! I'm Varun</h3>
                     <p>A young and passionate student innovator who loves creating intelligent digital products that help people in real life. I'm deeply interested in AI, app development, and building software that improves the daily life of students like me. I enjoy experimenting with new ideas, learning fast, and turning concepts into working applications. My mission is to develop simple, powerful tools that make studying smarter, more organized, and more enjoyable for every student. I believe great things can be built with focus, consistency, and creativity—and I'm working every day to prove it.</p>
@@ -951,7 +972,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 CODENCE - The Future-Building Group. All rights reserved.</p>
+            <p>&copy; 2025 CODENCE DEVELOP - The Future-Building Group. All rights reserved.</p>
             <p style="margin-top: 10px;">
                 <a href="mailto:contactcodence@gmail.com">contactcodence@gmail.com</a>
             </p>
